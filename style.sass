@@ -1,7 +1,8 @@
 .site-container
     display: flex
     flex-direction: column
-    justify-content: space-between
+    justify-content: center
+    align-items: center
 
 .header
     background-image: url("img/header_background.png")
@@ -12,13 +13,15 @@
     flex-direction: column
     justify-content: space-between
     align-items: center
+    width: 100%
 
 #header-foreground
-    position: absolute
-    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+    background:rgba(100,100,100, 0.7) !important
     width: 100%
-    background-color: #111111
-    opacity: 0.7
 
 .navbar
     background-color: rgba(0,0,0,0)!important
@@ -29,24 +32,21 @@ nav .navbar-brand
     font-size: 34px
     align:right
 
-.navbar-brand
-    padding-right: 200px
-
 nav .navbar-brand > img
     filter: invert(100%)
 
+
 nav .navbar-nav a
-  color: white !important
+    color: white !important
 
 nav .navbar-nav a:hover 
-      color: #C7B299 !important
+    color: #C7B299 !important
 
 nav .navbar-nav .fa 
     color:white
 
-.cart-search
-    padding-left: 50px
-    display: flex
+nav .navbar-toggler
+    filter: invert(100%)
 
 .slide
     display: flex
@@ -57,7 +57,11 @@ nav .navbar-nav .fa
     flex-direction: column
     justify-content: center
     align-items: center
-    padding: 400px
+    padding: 200px
+
+@media only screen and (max-width: 600px) 
+    .carousel-center
+        padding: 100px
 
 .carousel-center > h2
     color:#FFFFFF
@@ -84,13 +88,15 @@ nav .navbar-nav .fa
     border: 0
     box-shadow: 0px 5px 0px #736357
 
+.carousel-center > button:active
+    box-shadow: 0px 7px 0px #736357
+
 .carousel-center > button > p
     color:#FFFFFF
     font-family:Raleway-ExtraBold,AdobeInvisFont,MyriadPro-Regular
     font-size: 14px
     font-weight: bold
     margin: 10px 30px 
-
     
 ol.carousel-indicators
     display: flex
@@ -106,4 +112,53 @@ ol.carousel-indicators li.active
 ol.carousel-indicators li.active
     background: black
     border: 2px solid #D3C1AD
+
+.options
+    display: flex
+    justify-content: space-around
+    align-items: baseline
+    padding-top: 100px
+    width: 80%
     
+@media only screen and (max-width: 1000px) 
+    .options
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding-top: 50px
+
+.option
+    width: 20%
+    margin: 50px
+
+.option > a
+    display: flex
+    flex-direction: column
+    align-items: center
+    color: #555555
+    text-decoration: none
+
+.option > a > h2
+    text-align: center
+    white-space: nowrap
+
+.option > a > i 
+    font-size: 3em
+    padding-bottom: 30px
+
+.option > a > p
+    text-align: center
+    color: #8C8C8C
+
+.option > a > hr
+    border-top: 5px solid #F1EEE9
+    height: 20px
+    width: 20%
+
+.option > a:hover > i, 
+.option > a:hover > h2,
+    color: #C7B299
+
+.option > a:hover > hr
+    border-top: 5px solid #C7B299

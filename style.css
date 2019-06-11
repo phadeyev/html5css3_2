@@ -6,9 +6,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header {
@@ -29,14 +32,24 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 #header-foreground {
-  position: absolute;
-  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(100, 100, 100, 0.7) !important;
   width: 100%;
-  background-color: #111111;
-  opacity: 0.7;
 }
 
 .navbar {
@@ -47,10 +60,6 @@ nav .navbar-brand {
   color: white !important;
   font-family: Raleway-Regular,AdobeInvisFont,MyriadPro-Regular;
   font-size: 34px;
-}
-
-.navbar-brand {
-  padding-right: 200px;
 }
 
 nav .navbar-brand > img {
@@ -66,11 +75,9 @@ nav .navbar-nav a:hover {
   color: #C7B299 !important;
 }
 
-.cart-search {
-  padding-left: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+nav .navbar-toggler {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 
 .slide {
@@ -96,7 +103,13 @@ nav .navbar-nav a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 400px;
+  padding: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+  .carousel-center {
+    padding: 100px;
+  }
 }
 
 .carousel-center > h2 {
@@ -123,6 +136,11 @@ nav .navbar-nav a:hover {
   border: 0;
   -webkit-box-shadow: 0px 5px 0px #736357;
           box-shadow: 0px 5px 0px #736357;
+}
+
+.carousel-center > button:active {
+  -webkit-box-shadow: 0px 7px 0px #736357;
+          box-shadow: 0px 7px 0px #736357;
 }
 
 .carousel-center > button > p {
@@ -152,5 +170,87 @@ ol.carousel-indicators li.active {
 ol.carousel-indicators li.active {
   background: black;
   border: 2px solid #D3C1AD;
+}
+
+.options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding-top: 100px;
+  width: 80%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .options {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 50px;
+  }
+}
+
+.option {
+  width: 20%;
+  margin: 50px;
+}
+
+.option > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #555555;
+  text-decoration: none;
+}
+
+.option > a > h2 {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.option > a > i {
+  font-size: 3em;
+  padding-bottom: 30px;
+}
+
+.option > a > p {
+  text-align: center;
+  color: #8C8C8C;
+}
+
+.option > a > hr {
+  border-top: 5px solid #F1EEE9;
+  height: 20px;
+  width: 20%;
+}
+
+.option > a:hover > i,
+.option > a:hover > h2 {
+  color: #C7B299;
+}
+
+.option > a:hover > hr {
+  border-top: 5px solid #C7B299;
 }
 /*# sourceMappingURL=style.css.map */
