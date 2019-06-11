@@ -52,58 +52,58 @@ nav .navbar-toggler
     display: flex
     justify-content: space-between
 
-.carousel-center
+#header-foreground > .slide > .carousel > .carousel-inner > .carousel-item > .carousel-center
     display: flex
     flex-direction: column
     justify-content: center
     align-items: center
     padding: 200px
 
-@media only screen and (max-width: 600px) 
-    .carousel-center
+@media only screen and (max-width: 995px) 
+    #header-foreground > .slide > .carousel > .carousel-inner > .carousel-item > .carousel-center
         padding: 100px
 
-.carousel-center > h2
+#header-foreground > .slide > .carousel > .carousel-inner > .carousel-item > .carousel-center > h2
     color:#FFFFFF
     font-family:Raleway-ExtraBold,Raleway-Medium,AdobeInvisFont,MyriadPro-Regular
     font-size: 36px
     text-align: center
 
-.carousel-center > h3 
+#header-foreground > .slide > .carousel > .carousel-inner > .carousel-item > .carousel-center > h3 
     color:#FFFFFF
     ont-family:Raleway-ExtraBold,AdobeInvisFont,MyriadPro-Regular
     font-size: 52px
     align:center
     text-align: center
 
-.carousel-center > p 
+#header-foreground > .slide > .carousel > .carousel-inner > .carousel-item > .carousel-center > p 
     color:#FFFFFF
     font-family:Raleway-ExtraBold,Montserrat-Light,AdobeInvisFont,MyriadPro-Regular
     font-size: 16px
     text-align: center
 
-.carousel-center > button
+#header-foreground > .slide > .carousel > .carousel-inner > .carousel-item > .carousel-center > button
     background-color: #998675
     border-radius: 5px
     border: 0
     box-shadow: 0px 5px 0px #736357
 
-.carousel-center > button:active
+#header-foreground > .slide > .carousel > .carousel-inner > .carousel-item > .carousel-center > button:active
     box-shadow: 0px 7px 0px #736357
 
-.carousel-center > button > p
+#header-foreground > .slide > .carousel > .carousel-inner > .carousel-item > .carousel-center > button > p
     color:#FFFFFF
     font-family:Raleway-ExtraBold,AdobeInvisFont,MyriadPro-Regular
     font-size: 14px
     font-weight: bold
     margin: 10px 30px 
     
-ol.carousel-indicators
+#header-foreground > .slide > .carousel > ol.carousel-indicators
     display: flex
     align-items: center
 
-ol.carousel-indicators li,
-ol.carousel-indicators li.active
+ol.carousel-indicators > li,
+ol.carousel-indicators > li.active
     width: 10px
     height: 10px
     border-radius: 50%
@@ -119,17 +119,20 @@ ol.carousel-indicators li.active
     align-items: baseline
     padding-top: 100px
     width: 80%
-    
-@media only screen and (max-width: 1000px) 
+
+@media only screen and (max-width: 995px) 
     .options
         display: flex
+        flex-wrap: wrap
         flex-direction: column
         justify-content: center
         align-items: center
         padding-top: 50px
 
 .option
-    width: 20%
+    flex: 1 1 20%
+    min-width: 20%
+    max-width: 20%
     margin: 50px
 
 .option > a
@@ -162,3 +165,80 @@ ol.carousel-indicators li.active
 
 .option > a:hover > hr
     border-top: 5px solid #C7B299
+
+.slideshow-container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-color: #FBFAF8
+    width: 100%
+
+.slideshow-header
+    padding-top: 50px
+    color:#555555
+    font-family:Raleway-SemiBold,Raleway-Medium,AdobeInvisFont,MyriadPro-Regular
+    font-size: 30px
+    text-align: center
+
+.slideshow-description
+    color:#8C8C8C
+    font-family:Montserrat-Light,Raleway-Bold,AdobeInvisFont,MyriadPro-Regular
+    font-size: 16px
+    text-align: center
+    width: 50%
+
+@media only screen and (max-width: 995px)
+    .slideshow-description
+        width: 90%
+
+
+.slideshow-container > .slideshow-wrapper > .slide-images > .carousel > .carousel-inner > .carousel-item > img
+    height: 400px !important
+    width: 770px !important
+
+.slideshow-container > .slideshow-wrapper > .slide-images > .carousel > .carousel-inner
+
+    
+.purchase
+    background-image: linear-gradient(to right, #211B19, #4E3427)
+    display: flex
+    justify-content: space-around
+    align-items: center
+    width: 100%
+
+.purchase > .purchase-text
+    padding: 20px
+
+.purchase > .purchase-text > .purchase-text-wrapper
+    display: flex
+
+.purchase > .purchase-text > .purchase-text-wrapper > .purcahse-header-waxom
+    color: #C7B299
+    font-family: Raleway-Medium,Raleway-Regular,AdobeInvisFont,MyriadPro-Regular
+    font-size: 28px
+    padding-right: 0.2em
+
+.purchase > .purchase-text > .purchase-text-wrapper > .purcahse-header
+    color: white
+    font-family: Raleway-Medium,Raleway-Regular,AdobeInvisFont,MyriadPro-Regular
+    font-size: 28px
+
+.purchase > .purchase-text > .purchase-text-description
+    color:#615855
+    font-family: Raleway-Medium,Montserrat-Light,AdobeInvisFont,MyriadPro-Regular
+    font-size: 18px
+
+
+.purchase > button
+    background-color: #998675
+    border-radius: 5px
+    border: 0
+    box-shadow: 0px 5px 0px #736357
+
+.purchase > button > p
+    color:#FFFFFF
+    font-family:Raleway-ExtraBold,AdobeInvisFont,MyriadPro-Regular
+    font-size: 14px
+    font-weight: bold
+    margin: 10px 30px 
