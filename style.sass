@@ -1,3 +1,6 @@
+@import "scss/_functions.scss"
+@import "scss/_variables.scss"
+@import "scss/mixins/_breakpoints.scss"
 .site-container
     display: flex
     flex-direction: column
@@ -283,13 +286,29 @@ ol.carousel-indicators li.active
     background-color: #998675 !important
     box-shadow: 0 !important
 
-.projects > .project-list-wrapper > .card-columns
+.projects > .project-list-wrapper > .card-list
+    display: flex
+    justify-content: center
+    align-items: center
+    max-width: 50%
+
+.projects > .project-list-wrapper > .card-list > .card-columns
+    @include media-breakpoint-only(sm) 
+        column-count: 1
+    @include media-breakpoint-only(md)
+        column-count: 1
+    @include media-breakpoint-only(lg)
+        column-count: 1
+    @include media-breakpoint-only(xl)
+        column-count: 3
     padding-top: 30px
 
-.projects > .project-list-wrapper > .card-columns > .card
+    
+
+.projects > .project-list-wrapper > .card-list > .card-columns > .card
     width: 372px !important
 
-.projects > .project-list-wrapper > .card-columns > .card > .card-img-top
+.projects > .project-list-wrapper > .card-list > .card-columns > .card > .card-img-top
     height: 270px !important
 
 .projects > button 
@@ -309,13 +328,25 @@ ol.carousel-indicators li.active
     margin: 10px 30px 
 
 .video
+    width: 100%
+    display: flex
+    justify-content: space-around
+    align-items: center
+
+.video > .video-wrapper
     position: relative
     width: 100%
 
-.video > video
+.video > .video-wrapper >.video-box
+    display: flex
+    justify-content: center
+    align-items: center
+
+.video > .video-wrapper >.video-box > video
+    max-width: 1920px
     width: 100%
 
-.video > .video-overlay
+.video > .video-wrapper >.video-box > .video-overlay
     position: absolute
     top: 0
     right: 0
@@ -326,13 +357,13 @@ ol.carousel-indicators li.active
     justify-content: center
     align-items: center
 
-.video > .video-overlay > h1
+.video > .video-wrapper >.video-box > .video-overlay > h1
     color:#FFFFFF
     font-family:Raleway-ExtraBold,Raleway-Medium,AdobeInvisFont,MyriadPro-Regular
     font-size: 30px
     margin: 2% 0px
 
-.video > .video-overlay > h2
+.video > .video-wrapper >.video-box > .video-overlay > h2
     color:#FFFFFF
     font-family:Montserrat-Light,Raleway-Bold,AdobeInvisFont,MyriadPro-Regular
     font-size: 16px
@@ -343,7 +374,7 @@ ol.carousel-indicators li.active
     display: flex
     justify-content: center
     align-items: center
-    padding-top: 10%
+    padding-top: 50px
 
 .mobile-devices > .mobile-description 
     width: 30%
@@ -381,13 +412,6 @@ ol.carousel-indicators li.active
 @media only screen and (min-width: 1200px)
     #header-foreground > .slide > .carousel > .carousel-inner
         width: 1200px
-
-@media only screen and (min-width: 1200px)
-    .projects > .project-list-wrapper > .card-columns
-        width: 1200px
-@media only screen and (max-width: 1200px)
-    .projects > .project-list-wrapper > .card-columns
-        column-count: 1 !important
 
 @media only screen and (max-width: 992px)
     .slideshow-container > .slideshow-wrapper > .slide-images > .carousel > .carousel-inner
