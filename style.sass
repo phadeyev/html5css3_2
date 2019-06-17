@@ -157,6 +157,13 @@ ol.carousel-indicators li.active
     height: 20px
     width: 20%
 
+.option > a > i,
+.option > a > h2
+    transition: color 0.2s
+
+.option > a > hr
+    transition: border-top 0.2s
+
 .option > a:hover > i, 
 .option > a:hover > h2,
     color: #C7B299
@@ -307,6 +314,7 @@ ol.carousel-indicators li.active
 
 .projects > .project-list-wrapper > .card-list > .card-columns > .card > .card-body
     background-color: #FBFAF8 !important
+    transition: background-color 0.2s
 
 .projects > .project-list-wrapper > .card-list > .card-columns > .card > .card-body > .arrow-up
     width: 0
@@ -317,7 +325,16 @@ ol.carousel-indicators li.active
     position: relative
     top: -35px
     left: 20px
+    transition: border-bottom 0.2s
 
+.projects > .project-list-wrapper > .card-list > .card-columns > .card > .card-body > .card-title
+    color: #C7B299
+    transition: color 0.2s
+
+.projects > .project-list-wrapper > .card-list > .card-columns > .card > .card-body > .card-text
+    color: #D1D1D1
+    transition: color 0.2s
+    
 .projects > .project-list-wrapper > .card-list > .card-columns > .card:hover > .card-body
     background-color: #362F2D !important
 
@@ -329,12 +346,6 @@ ol.carousel-indicators li.active
 
 .projects > .project-list-wrapper > .card-list > .card-columns > .card:hover > .card-body > .card-text
     color: #C7B299
-
-.projects > .project-list-wrapper > .card-list > .card-columns > .card > .card-body > .card-title
-    color: #C7B299
-
-.projects > .project-list-wrapper > .card-list > .card-columns > .card > .card-body > .card-text
-    color: #D1D1D1
 
 .video
     width: 100%
@@ -694,9 +705,9 @@ ol.carousel-indicators li.active
 @media only screen and (max-width: 992px)
     .slideshow-container > .slideshow-wrapper > .slide-images > .carousel > .carousel-inner
         height: 200px !important
-        width: 385px !important
+        width: 380px !important
     .slideshow-container > .slideshow-wrapper
-        width: 385px !important
+        width: 380px !important
     .slideshow-description
         width: 90%
     .options

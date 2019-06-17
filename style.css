@@ -231,6 +231,17 @@ ol.carousel-indicators li.active {
   width: 20%;
 }
 
+.option > a > i,
+.option > a > h2 {
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.option > a > hr {
+  -webkit-transition: border-top 0.2s;
+  transition: border-top 0.2s;
+}
+
 .option > a:hover > i,
 .option > a:hover > h2 {
   color: #C7B299;
@@ -468,6 +479,8 @@ ol.carousel-indicators li.active {
 
 .projects > .project-list-wrapper > .card-list > .card-columns > .card > .card-body {
   background-color: #FBFAF8 !important;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
 }
 
 .projects > .project-list-wrapper > .card-list > .card-columns > .card > .card-body > .arrow-up {
@@ -479,6 +492,20 @@ ol.carousel-indicators li.active {
   position: relative;
   top: -35px;
   left: 20px;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
+}
+
+.projects > .project-list-wrapper > .card-list > .card-columns > .card > .card-body > .card-title {
+  color: #C7B299;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.projects > .project-list-wrapper > .card-list > .card-columns > .card > .card-body > .card-text {
+  color: #D1D1D1;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
 }
 
 .projects > .project-list-wrapper > .card-list > .card-columns > .card:hover > .card-body {
@@ -495,14 +522,6 @@ ol.carousel-indicators li.active {
 
 .projects > .project-list-wrapper > .card-list > .card-columns > .card:hover > .card-body > .card-text {
   color: #C7B299;
-}
-
-.projects > .project-list-wrapper > .card-list > .card-columns > .card > .card-body > .card-title {
-  color: #C7B299;
-}
-
-.projects > .project-list-wrapper > .card-list > .card-columns > .card > .card-body > .card-text {
-  color: #D1D1D1;
 }
 
 .video {
@@ -965,10 +984,10 @@ ol.carousel-indicators li.active {
 @media only screen and (max-width: 992px) {
   .slideshow-container > .slideshow-wrapper > .slide-images > .carousel > .carousel-inner {
     height: 200px !important;
-    width: 385px !important;
+    width: 380px !important;
   }
   .slideshow-container > .slideshow-wrapper {
-    width: 385px !important;
+    width: 380px !important;
   }
   .slideshow-description {
     width: 90%;
