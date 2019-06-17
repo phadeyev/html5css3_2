@@ -7,7 +7,7 @@
     justify-content: center
     align-items: center
     margin: 0 auto
-    min-width: 300px
+    min-width: 400px
 
 .header
     background-image: url("img/header_background.png")
@@ -260,6 +260,10 @@ ol.carousel-indicators li.active
     justify-content: center
     align-items: center
 
+.projects > .project-list-wrapper > .btn-group
+    display: flex
+    flex-wrap: wrap
+
 .projects > .project-list-wrapper > .btn-group > .btn
     color: #8C8C8C
     background-color: white
@@ -300,6 +304,37 @@ ol.carousel-indicators li.active
 
 .projects > .project-list-wrapper > .card-list > .card-columns > .card > .card-img-top
     height: 270px !important
+
+.projects > .project-list-wrapper > .card-list > .card-columns > .card > .card-body
+    background-color: #FBFAF8 !important
+
+.projects > .project-list-wrapper > .card-list > .card-columns > .card > .card-body > .arrow-up
+    width: 0
+    height: 0
+    border-left: 15px solid transparent
+    border-right: 15px solid transparent
+    border-bottom: 15px solid #FBFAF8
+    position: relative
+    top: -35px
+    left: 20px
+
+.projects > .project-list-wrapper > .card-list > .card-columns > .card:hover > .card-body
+    background-color: #362F2D !important
+
+.projects > .project-list-wrapper > .card-list > .card-columns > .card:hover > .card-body > .arrow-up
+    border-bottom: 15px solid #362F2D
+
+.projects > .project-list-wrapper > .card-list > .card-columns > .card:hover > .card-body > .card-title
+    color: white
+
+.projects > .project-list-wrapper > .card-list > .card-columns > .card:hover > .card-body > .card-text
+    color: #C7B299
+
+.projects > .project-list-wrapper > .card-list > .card-columns > .card > .card-body > .card-title
+    color: #C7B299
+
+.projects > .project-list-wrapper > .card-list > .card-columns > .card > .card-body > .card-text
+    color: #D1D1D1
 
 .video
     width: 100%
@@ -473,6 +508,9 @@ ol.carousel-indicators li.active
     align-items: center
     padding: 140px 0
 
+.sponsors > .sponsors-foreground > .sponsors-logo-container > .sponsor-logo
+    margin: 20px 20px 
+
 .footer
     background-color: #191919
 
@@ -510,8 +548,144 @@ ol.carousel-indicators li.active
     font-size: 14px
     text-decoration: none
 
-.sponsors > .sponsors-foreground > .sponsors-logo-container > .sponsor-logo
-    margin: 20px 20px 
+.footer > .footer-container > .row > .footer-posts
+
+.footer > .footer-container > .row > .footer-posts > p 
+    color:#FFFFFF
+    font-family:Raleway-Medium,Raleway-Bold,AdobeInvisFont,MyriadPro-Regular
+    font-size: 24px
+
+.footer > .footer-container > .row > .footer-posts > .post-list
+    list-style-type: none
+    padding-left: 0
+
+.footer > .footer-container > .row > .footer-posts > .post-list > .post
+    margin-bottom: 35px
+
+.footer > .footer-container > .row > .footer-posts > .post-list > .post > a
+    text-decoration: none
+
+.footer > .footer-container > .row > .footer-posts > .post-list > .post > a > .post-date
+    color:#363636
+    font-family:Montserrat-Light,Raleway-Bold,AdobeInvisFont,MyriadPro-Regular
+    font-size: 12px
+    margin-bottom: 5px
+
+.footer > .footer-container > .row > .footer-posts > .post-list > .post > a > .post-text
+    color:#555555
+    font-family:Montserrat-Light,Raleway-Bold,AdobeInvisFont,MyriadPro-Regular
+    font-size: 14px
+
+.footer > .footer-container > .row > .footer-posts > .post-list > .post > a:hover > .post-date
+    color:#FFFFFF
+    font-family:Montserrat-Light,Raleway-Bold,AdobeInvisFont,MyriadPro-Regular
+    font-size: 12px
+
+.footer > .footer-container > .row > .footer-posts > .post-list > .post > a:hover > .post-text
+    color:#C7B299
+    font-family:Montserrat-Light,Raleway-Bold,AdobeInvisFont,MyriadPro-Regular
+    font-size: 14px
+
+.footer > .footer-container > .row > .footer-twitter > p
+    color:#FFFFFF
+    font-family:Raleway-Medium,Raleway-Bold,AdobeInvisFont,MyriadPro-Regular
+    font-size: 24px
+
+.footer > .footer-container > .row > .footer-twitter > .twitter-list
+    list-style-type: none
+    padding-left: 0
+
+.footer > .footer-container > .row > .footer-twitter > .twitter-list > .twitter-post > a.twitter-link
+    text-decoration: none
+
+.footer > .footer-container > .row > .footer-twitter > .twitter-list > .twitter-post > a.twitter-link > .twitter-post-text
+    color:#555555
+    font-family:Montserrat-Light,Raleway-Bold,AdobeInvisFont,MyriadPro-Regular
+    font-size: 13px
+.footer > .footer-container > .row > .footer-twitter > .twitter-list > .twitter-post > a.twitter-link > .twitter-post-text > mark.tag
+    color: #00BFF3
+    background-color: inherit
+
+.footer > .footer-container > .row > .footer-twitter > .twitter-list > .twitter-post > a.twitter-link > .twitter-post-text > mark.link
+    color: #959595
+    background-color: inherit
+
+.footer > .footer-container > .row > .footer-twitter > .twitter-list > .twitter-post > a.twitter-link > .twitter-post-date
+    color:#363636
+    font-family:Montserrat-Light,Raleway-Bold,AdobeInvisFont,MyriadPro-Regular
+    font-size: 12px
+
+.footer > .footer-container > .row > .footer-twitter > .twitter-list > .twitter-post > a.twitter-link:hover > .twitter-post-text
+    color:#C7B299
+
+.footer > .footer-container > .row > .footer-dribble
+    margin-left: 0
+
+.footer > .footer-container > .row > .footer-dribble > p
+    color:#FFFFFF
+    font-family:Raleway-Medium,Raleway-Bold,AdobeInvisFont,MyriadPro-Regular
+    font-size: 24px
+
+
+.footer > .footer-container > .row > .footer-dribble > .dribble-img-container > .row > .dribble-image
+    padding: 10px
+
+.copyright
+    width: 100%
+    display: flex
+    justsify-content: space-around
+    flex-wrap: wrap
+    align-items: center
+    background-color: black
+
+.copyright > .copyright-left
+    
+
+.copyright > .copyright-left > ul
+    list-style-type: none
+    padding-left: 0
+
+.copyright > .copyright-left > ul > li
+    float: left
+    color:#555555
+    font-family:Montserrat-Light,Raleway-Bold,AdobeInvisFont,MyriadPro-Regular
+    font-size: 13px
+    padding: 15px
+
+.copyright > .copyright-left > ul > li:not(:last-child):after
+    content: '\007C'
+    color: #555555
+    padding-left: 30px
+    position: relative
+
+
+.copyright > .copyright-left > ul > li > a
+    text-decoration: none
+    text-align: center
+    color:#555555
+    font-family:Montserrat-Light,Raleway-Bold,AdobeInvisFont,MyriadPro-Regular
+    font-size: 13px
+
+.copyright > .copyright-left > ul > li.copyright-waxom > a
+    text-decoration: none
+    color: #959595
+
+.copyright > .copyright-left > ul > li > a.faq-link
+    color: #C7B299
+
+.copyright > .copyright-right
+    display: flex
+    justify-content: space-around
+
+.copyright > .copyright-right > p
+    color:#555555
+    font-family:Montserrat-Light,Raleway-Bold,AdobeInvisFont,MyriadPro-Regular
+    font-size: 13px
+    margin-bottom: 0
+
+.copyright > .copyright-right > p > a
+    text-decoration: none
+    color: #959595
 
 @media only screen and (min-width: 1200px)
     #header-foreground > .slide > .carousel > .carousel-inner
@@ -548,3 +722,6 @@ ol.carousel-indicators li.active
     .purchase > .purchase-text > .purcahse-text-header,
     .purchase > .purchase-text > .purchase-text-description
         text-align: center
+
+    .purchase > .button-t
+        margin-bottom: 20px
