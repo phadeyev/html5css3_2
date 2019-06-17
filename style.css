@@ -1048,6 +1048,10 @@ ol.carousel-indicators li.active {
   .purchase > .button-t {
     margin-bottom: 20px;
   }
+  .mobile-devices > img {
+    max-width: 100%;
+    height: auto;
+  }
   .copyright > .copyright-left > ul > li {
     padding: 5px;
   }
