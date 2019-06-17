@@ -644,13 +644,13 @@ ol.carousel-indicators li.active
 .copyright
     width: 100%
     display: flex
-    justsify-content: space-around
+    justsify-content: center
     flex-wrap: wrap
     align-items: center
     background-color: black
 
 .copyright > .copyright-left
-    
+    margin: auto
 
 .copyright > .copyright-left > ul
     list-style-type: none
@@ -687,12 +687,14 @@ ol.carousel-indicators li.active
 .copyright > .copyright-right
     display: flex
     justify-content: space-around
+    margin: auto
 
 .copyright > .copyright-right > p
     color:#555555
     font-family:Montserrat-Light,Raleway-Bold,AdobeInvisFont,MyriadPro-Regular
     font-size: 13px
     margin-bottom: 0
+    padding-left: 5px
 
 .copyright > .copyright-right > p > a
     text-decoration: none
@@ -736,3 +738,9 @@ ol.carousel-indicators li.active
 
     .purchase > .button-t
         margin-bottom: 20px
+
+    .copyright > .copyright-left > ul > li
+        padding: 5px
+    
+    .copyright > .copyright-left > ul > li:not(:last-child):after
+        padding-left: 10px

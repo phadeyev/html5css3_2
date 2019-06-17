@@ -912,13 +912,17 @@ ol.carousel-indicators li.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justsify-content: space-around;
+  justsify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   background-color: black;
+}
+
+.copyright > .copyright-left {
+  margin: auto;
 }
 
 .copyright > .copyright-left > ul {
@@ -962,12 +966,14 @@ ol.carousel-indicators li.active {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin: auto;
 }
 
 .copyright > .copyright-right > p {
   color: #555555;
   font-size: 13px;
   margin-bottom: 0;
+  padding-left: 5px;
 }
 
 .copyright > .copyright-right > p > a {
@@ -1042,6 +1048,12 @@ ol.carousel-indicators li.active {
   }
   .purchase > .button-t {
     margin-bottom: 20px;
+  }
+  .copyright > .copyright-left > ul > li {
+    padding: 5px;
+  }
+  .copyright > .copyright-left > ul > li:not(:last-child):after {
+    padding-left: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
