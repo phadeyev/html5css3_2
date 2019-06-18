@@ -36,6 +36,15 @@
   width: 100%;
 }
 
+.header > .row {
+  width: 100%;
+}
+
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
 #header-foreground {
   display: -webkit-box;
   display: -ms-flexbox;
