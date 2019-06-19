@@ -191,7 +191,7 @@ ol.carousel-indicators li.active {
       -ms-flex-align: baseline;
           align-items: baseline;
   padding-top: 100px;
-  width: 80%;
+  width: 100%;
 }
 
 .option {
@@ -465,8 +465,8 @@ ol.carousel-indicators li.active {
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .projects > .project-list-wrapper > .card-list > .card-columns {
-    -webkit-column-count: 1;
-            column-count: 1;
+    -webkit-column-count: 2;
+            column-count: 2;
   }
 }
 
@@ -992,6 +992,25 @@ ol.carousel-indicators li.active {
 @media only screen and (min-width: 1200px) {
   #header-foreground > .slide > .carousel > .carousel-inner {
     width: 1200px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .options {
+    width: 100%;
+    padding-top: 30px;
+  }
+  .options > .option {
+    margin: 0;
+  }
+  .options > .option > a > h2 {
+    font-size: 25px;
+  }
+  .options > .option > a > p {
+    font-size: 15px;
+  }
+  .projects > .project-list-wrapper > .card-list {
+    width: 90%;
   }
 }
 

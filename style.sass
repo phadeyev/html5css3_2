@@ -132,7 +132,7 @@ ol.carousel-indicators li.active
     justify-content: space-around
     align-items: baseline
     padding-top: 100px
-    width: 80%
+    width: 100%
 
 .option
     flex: 1 1 20%
@@ -306,7 +306,7 @@ ol.carousel-indicators li.active
     @include media-breakpoint-only(md)
         column-count: 1
     @include media-breakpoint-only(lg)
-        column-count: 1
+        column-count: 2
     @include media-breakpoint-only(xl)
         column-count: 3
     padding-top: 30px
@@ -710,6 +710,20 @@ ol.carousel-indicators li.active
 @media only screen and (min-width: 1200px)
     #header-foreground > .slide > .carousel > .carousel-inner
         width: 1200px
+
+@media only screen and (max-width: 1200px)
+    .options
+        width: 100%
+        padding-top: 30px
+    .options > .option 
+        margin: 0
+    .options > .option > a > h2
+        font-size: 25px
+    .options > .option > a > p
+        font-size: 15px
+    .projects > .project-list-wrapper > .card-list
+        width: 90%
+
 
 @media only screen and (max-width: 992px)
     .slideshow-container > .slideshow-wrapper > .slide-images > .carousel > .carousel-inner
