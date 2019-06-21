@@ -303,8 +303,14 @@ ol.carousel-indicators li.active
 .projects > .project-list-wrapper > .card-list > .card-columns
     @include media-breakpoint-only(sm) 
         column-count: 1
+        display: flex
+        flex-direction: column
+        align-items: center
     @include media-breakpoint-only(md)
         column-count: 1
+        display: flex
+        flex-direction: column
+        align-items: center
     @include media-breakpoint-only(lg)
         column-count: 2
     @include media-breakpoint-only(xl)
@@ -330,7 +336,7 @@ ol.carousel-indicators li.active
     border-right: 15px solid transparent
     border-bottom: 15px solid #FBFAF8
     position: relative
-    top: -35px
+    top: -34px
     left: 20px
     transition: border-bottom 0.2s
 
@@ -452,8 +458,14 @@ ol.carousel-indicators li.active
 .statistics > .card-list > .card-columns
     @include media-breakpoint-only(sm) 
         column-count: 1
+        display: flex
+        flex-direction: column
+        align-items: center
     @include media-breakpoint-only(md)
         column-count: 1
+        display: flex
+        flex-direction: column
+        align-items: center
     @include media-breakpoint-only(lg)
         column-count: 5
     @include media-breakpoint-only(xl)
@@ -501,12 +513,79 @@ ol.carousel-indicators li.active
     font-family:Raleway-SemiBold,Raleway-Medium,AdobeInvisFont,MyriadPro-Regular
     font-size: 30px
     text-align: center
+    padding-top: 20px
 
 .posts > .posts-description
     color:#8C8C8C
     font-family:Montserrat-Light,Raleway-Bold,AdobeInvisFont,MyriadPro-Regular
     font-size: 16px
     text-align: center
+
+.posts > .card-list 
+    display: flex
+    justify-content: center
+    align-items: center
+    max-width: 80%
+
+.posts > .card-list > .card-columns
+    @include media-breakpoint-only(sm) 
+        column-count: 1
+        display: flex
+        flex-direction: column
+        align-items: center
+    @include media-breakpoint-only(md)
+        column-count: 1
+        display: flex
+        flex-direction: column
+        align-items: center
+    @include media-breakpoint-only(lg)
+        column-count: 3
+    @include media-breakpoint-only(xl)
+        column-count: 3
+
+
+.posts > .card-list > .card-columns > .card
+    margin: 20px
+    max-width: 300px
+
+.posts > .card-list > .card-columns > .card > .card-img-container
+    overflow: hidden
+
+.posts > .card-list > .card-columns > .card > .card-img-container > .card-img-top
+    height: 200px
+    transition: filter 0.2s
+
+.posts > .card-list > .card-columns > .card > .card-body
+    transition: background-color 0.2s
+
+.posts > .card-list > .card-columns > .card > .card-body > .card-title
+    color:#555555
+    font-family:Raleway-Medium,Raleway-Bold,AdobeInvisFont,MyriadPro-Regular
+    font-size: 20px
+    transition: color 0.2s
+
+.posts > .card-list > .card-columns > .card > .card-body > .card-text
+    color: #8C8C8C
+    font-family:Montserrat-Light,Raleway-Bold,AdobeInvisFont,MyriadPro-Regular
+    font-size: 14px
+    transition: color 0.2s
+
+.posts > .card-list > .card-columns > .card > .card-body > .card-link
+    color:#C7B299
+    font-family:Montserrat-Light,Raleway-Regular,AdobeInvisFont,MyriadPro-Regular
+    font-size: 14px
+
+.posts > .card-list > .card-columns > .card:hover > .card-img-container > .card-img-top
+    filter: brightness(50%)
+
+.posts > .card-list > .card-columns > .card:hover > .card-body
+    background-color: #362F2D
+
+.posts > .card-list > .card-columns > .card:hover > .card-body > .card-title
+    color: #C7B299 !important
+
+.posts > .card-list > .card-columns > .card:hover > .card-body > .card-text
+    color: #FFFFFF
 
 .sponsors
     background-image: url("img/sponsors/background.png")
